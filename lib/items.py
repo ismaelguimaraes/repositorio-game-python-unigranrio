@@ -1,4 +1,5 @@
 import pygame.image
+import random
 
 rand = random.randint
 
