@@ -12,3 +12,16 @@ class VALENTINA:
 
     def TRANSFORMING(self):
         self.TRANSFORM = not self.TRANSFORM
+
+class ENZO:
+    def __init__(self):
+        self.SPRITE_POS = pygame.image.load('./sprites/chars/enzo/11.png')
+        self.PLAYER_POS = [0,0]
+        self.PLAYER_INV = []
+        self.WEAPON = False
+        self.HEALTH = 5
+        self.DIRECTION = False
+        self.TRANSFORM = False
+
+    def TRANSFORMING(self):
+        self.TRANSFORM = not self.TRANSFORM 
