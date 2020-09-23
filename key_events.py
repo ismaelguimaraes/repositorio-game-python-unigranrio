@@ -15,14 +15,11 @@ class KeyEvents:
     def __init__(self, PLAYER):
         self.PLAYER = PLAYER
         self.counter = 0
-        self.movement = .25
+        self.movement = .2
         self.orbs = []
 
     def global_events(self):
-        if self.PLAYER.TRANSFORM:
-            self.movement = .5
-        else:
-            self.movement = .25
+        self.movement = .2
 
     def quit(self):
         pygame.quit()

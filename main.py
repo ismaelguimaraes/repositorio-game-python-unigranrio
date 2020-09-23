@@ -24,23 +24,18 @@ while not GAME_OVER:
 
         if event.type == QUIT:
             key_events.quit()
+        elif (keys[pygame.K_ESCAPE]):
+            key_events.quit()
 
-        # Movimentação pra direita
-        if (keys[K_RIGHT]) and PLAYER.PLAYER_POS[0] < MAPWIDTH - 1:
-            key_events.key_right()
-
-        # Movimentação pra esquerda
-        if (keys[K_LEFT]) and PLAYER.PLAYER_POS[0] > 0:
-            key_events.key_left()
-
-        # Movimentação pra cima
-        if (keys[K_UP]) and PLAYER.PLAYER_POS[1] > 0:
+        # Condição das movimentações dos personagens
+        if (keys[pygame.K_w]) and PLAYER.PLAYER_POS[1] > 0:
             key_events.key_up()
-
-        # Movimentação pra baixo
-        if (keys[K_DOWN]) and PLAYER.PLAYER_POS[1] < MAPHEIGHT -1:
+        elif (keys[pygame.K_d]) and PLAYER.PLAYER_POS[0] < MAPWIDTH - 1:
+            key_events.key_right()
+        elif (keys[pygame.K_s]) and PLAYER.PLAYER_POS[1] < MAPHEIGHT - 1:
             key_events.key_down()
-
+        elif (keys[pygame.K_a]) and PLAYER.PLAYER_POS[0] > 0:
+            key_events.key_left()
 
     # Renderização do Mapa
     for row in range(MAPHEIGHT):
