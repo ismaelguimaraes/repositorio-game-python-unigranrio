@@ -51,8 +51,8 @@ while not GAME_OVER:
     DISPLAYSURFACE.blit(PLAYER.SPRITE_POS, (PLAYER.PLAYER_POS[0]*TILESIZE, PLAYER.PLAYER_POS[1]*TILESIZE))
 
     # Renderização das árvores
-    for tree in sorted(trees, key=lambda t: t.Y_POS):
-        DISPLAYSURFACE.blit(tree.SPRITE, (tree.X_POS, tree.Y_POS))
+    # for tree in sorted(trees, key=lambda t: t.Y_POS):
+    #     DISPLAYSURFACE.blit(tree.SPRITE, (tree.X_POS, tree.Y_POS))
 
     # Update do jogo
     pygame.display.update()

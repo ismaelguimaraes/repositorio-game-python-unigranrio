@@ -14,6 +14,7 @@ l_images = [l_path+str(l)+'.png' for l in range(3)]
 class KeyEvents:
     def __init__(self, PLAYER):
         self.PLAYER = PLAYER
+        self.counter = 0
         self.movement = .25
         self.orbs = []
 
