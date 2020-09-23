@@ -15,8 +15,8 @@ class VALENTINA:
 
 class ENZO:
     def __init__(self):
-        self.SPRITE_POS = pygame.image.load('./sprites/chars/enzo/enzo_r0.png')
-        self.PLAYER_POS = [0,9]
+        self.SPRITE_POS = pygame.image.load('./sprites/chars/enzo/enzo_b0.png')
+        self.PLAYER_POS = [10,9]
         self.PLAYER_INV = []
         self.WEAPON = False
         self.HEALTH = 5
