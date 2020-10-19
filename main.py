@@ -17,6 +17,7 @@ GAME_OVER = False
 
 # Início do loop do jogo
 while not GAME_OVER:
+
     for event in pygame.event.get():
 
         keys = pygame.key.get_pressed()
